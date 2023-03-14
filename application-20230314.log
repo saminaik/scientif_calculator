@@ -1,0 +1,18 @@
+2023-03-14 13:06:52.262 [main] INFO  org.example.Main - [POWER - 10.0 RAISED TO] 10.0
+2023-03-14 13:06:52.266 [main] INFO  org.example.Main - [RESULT - POWER] - 1.0E10
+2023-03-14 13:06:52.269 [main] INFO  org.example.Main - [POWER - 1.0 RAISED TO] 10.0
+2023-03-14 13:06:52.269 [main] INFO  org.example.Main - [RESULT - POWER] - 1.0
+2023-03-14 13:06:52.269 [main] INFO  org.example.Main - [POWER - 0.5 RAISED TO] 10.0
+2023-03-14 13:06:52.270 [main] INFO  org.example.Main - [RESULT - POWER] - 9.765625E-4
+2023-03-14 13:06:52.270 [main] INFO  org.example.Main - [POWER - NaN RAISED TO] 10.0
+2023-03-14 13:06:52.270 [main] INFO  org.example.Main - [RESULT - POWER] - NaN
+2023-03-14 13:06:52.289 [main] INFO  org.example.Main - [FACTORIAL] - 10.0
+2023-03-14 13:06:52.292 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 3628800.0
+2023-03-14 13:06:52.293 [main] INFO  org.example.Main - [FACTORIAL] - 1.0
+2023-03-14 13:06:52.293 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 1.0
+2023-03-14 13:06:52.299 [main] INFO  org.example.Main - [NATURAL LOG] - 10.0
+2023-03-14 13:06:52.299 [main] INFO  org.example.Main - [RESULT - NATURAL LOG] - 2.302585092994046
+2023-03-14 13:06:52.300 [main] INFO  org.example.Main - [NATURAL LOG] - -0.5
+2023-03-14 13:06:52.301 [main] INFO  org.example.Main - [RESULT - NATURAL LOG] - NaN
+2023-03-14 13:06:52.308 [main] INFO  org.example.Main - [SQ ROOT] - 10.0
+2023-03-14 13:06:52.309 [main] INFO  org.example.Main - [RESULT - SQ ROOT] - 3.1622776601683795
