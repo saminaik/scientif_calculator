@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git pull') {
             steps {
-                git url: 'https://github.com/saminaik/scientif_calculator.git', branch: 'master',
+                git url: 'https://github.com/saminaik/scientif_calculator.git', branch: 'main',
                 credentialsId:'githubID'
             }
         }
