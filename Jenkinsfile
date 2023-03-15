@@ -19,8 +19,8 @@ pipeline {
             }
         }
         stage('Image Deploy') {
-              steps {
-            withCredentials([usernamePassword(credentialsId: 'dockerhub_id', usernameVariable: 'docker_username', passwordVariable: 'docker_password')]) {
+            steps {
+              withCredentials([usernamePassword(credentialsId: 'dockerhub_id', usernameVariable: 'docker_username', passwordVariable: 'docker_password')]) {
               sh "echo $docker_password | docker login --username $docker_username --password-stdin"
               sh "docker push saminaik/calulator:latest"
             }
@@ -45,3 +45,4 @@ pipeline {
     }
  }
 }
+
