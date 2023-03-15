@@ -12,6 +12,11 @@ pipeline {
             steps{
                 sh "mvn clean install"
             }
-        }   
+        }
+        stage('Image Build'){
+            steps{
+                sh "docker build -t saminaik/calulator:latest ."
+            }
+        } 
     }
 }
