@@ -1,0 +1,23 @@
+
+
+- name: Run Docker container
+  hosts: containers
+  become: true
+  tasks:
+    - name: Log in to Docker Hub
+      docker_login:
+        registry_url: https://index.docker.io/v1/
+        username: "{{ jenkins_credentials_username }}"
+        password: "{{ jenkins_credentials_password }}"
+
+    - name: Pull Docker image
+      docker_image:
+        name: saminaik/calulator
+        source: pull
+
+    - name: Run Docker container
+      docker_container:
+        name: my-calculator
+        image: saminaik/calulator
+        state: started  
+        command: java -jar /calculator2-1.0-SNAPSHOT-shaded.jar
