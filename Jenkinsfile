@@ -18,15 +18,15 @@ pipeline {
                 sh "docker build -t saminaik/calulator:latest ."
             }
         }
-          stage('Image Deploy') {
-          steps {
+        stage('Image Deploy') {
+              steps {
             withCredentials([usernamePassword(credentialsId: 'dockerhub_id', usernameVariable: 'docker_username', passwordVariable: 'docker_password')]) {
               sh "echo $docker_password | docker login --username $docker_username --password-stdin"
               sh "docker push saminaik/calulator:latest"
             }
           }
-           stage('Ansible Deploy') {
-            steps {
+        stage('Ansible Deploy') {
+           steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKERHUB_USERNAME')]) {
                     ansiblePlaybook(
                         installation: 'Ansible',
@@ -43,5 +43,5 @@ pipeline {
             }
         }
     }
-}
+ }
 }
