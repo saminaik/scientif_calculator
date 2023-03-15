@@ -33,7 +33,7 @@ pipeline {
                     ansiblePlaybook(
                         installation: 'Ansible',
                         inventory: 'inventory',
-                        playbook: 'p3.yml',
+                        playbook: 'playbook.yml',
                         colorized: true,
                         disableHostKeyChecking: true,
                         extraVars: [
